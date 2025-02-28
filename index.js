@@ -39,8 +39,6 @@ function getOneDayWeather(cityName) {
                 precipitation.textContent = weatherData.weather[0].main;
                 humidity.textContent = `${weatherData.main.humidity}%`;
                 wind.textContent = `${weatherData.wind.speed}km/h`;
-                console.log(weatherData);
-
             } else {
                 alert(`Error: ${weatherData.message}`);
             }
