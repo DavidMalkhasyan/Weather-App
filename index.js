@@ -41,12 +41,11 @@ function getOneDayWeather(cityName) {
                 wind.textContent = `${weatherData.wind.speed}km/h`;
                 console.log(weatherData);
 
-                // console.log( `Temperature: ${temp}°C, Humidity: ${humidity}%, Description: ${description} Icon: ${icon}`);
             } else {
                 alert(`Error: ${weatherData.message}`);
             }
         })
-        .catch((err) => console.log("Error: " + err.message));
+        .catch((err) => alert("Error: " + err.message));
 };
 
 getOneDayWeather("Yerevan");
