@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather-APP</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+      <header class="header">
+        <h1 class="header__title">Weather APP</h1>
+        <div class="search">
+            <input type="text" class="search__input" placeholder="Enter city name..." />
+            <button class="search__button">Search</button>
+        </div>
+    </header>
+    
+    <main class="weather">
+        <section class="weather__today">
+            <div class="weather__info">
+                <div class="weather__location">
+                    <p class="weather__day">Tuesday</p>
+                    <p class="weather__date">20 Jun 2025</p>
+                    <p class="weather__city">Biarritz, FR</p>
+                </div>
+                <div class="weather__status">
+                    <img src="" alt="weather icon" class="weather__icon" />
+                    <p class="weather__temperature">29°C</p>
+                    <p class="weather__description">Sunny</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="weather__details">
+            <div class="weather__stats">
+                <div class="weather__stat">
+                    <p class="weather__stat-label">Precipitation</p>
+                    <p class="weather__stat-value precipitation">0%</p>
+                </div>
+                <div class="weather__stat">
+                    <p class="weather__stat-label">Humidity</p>
+                    <p class="weather__stat-value humidity">42%</p>
+                </div>
+                <div class="weather__stat">
+                    <p class="weather__stat-label">Wind</p>
+                    <p class="weather__stat-value wind">3 km/h</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>
